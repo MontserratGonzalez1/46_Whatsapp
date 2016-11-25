@@ -1,0 +1,49 @@
+#back-verde {
+	margin: 0;
+	height: 150px;
+    background-color: #00796b;
+    width: 100%,
+}
+
+#back-gris {
+	margin: 0;
+	height: 522px;
+    background-color: #e0e0e0;
+    width: 100%,
+    z-index: auto;
+}
+
+#contenedor {
+	width: 90%;
+	height: 550px;
+	background-image: url("../image/chat-panel-bg.png");
+	background-color: #e0e0e0;
+	margin-top: -600px;
+	margin-left: 60px;
+	border: solid gray;
+	position: static;
+}
+
+.menu {
+	margin-left: 60px;
+	height: 550px;
+	margin-top: 71px;
+	width: 30%;
+}
+
+.panel-gris {
+	height: 60px;
+	margin: 0;
+}
+
+.img-perfiles {
+	width: 45px;
+	height: 45px;
+}
+
+
+
+@media screen and (max-height: 500px)
+ {
+    overflow-y: auto;
+}
