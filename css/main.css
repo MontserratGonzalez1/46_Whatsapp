@@ -65,6 +65,12 @@
 	opacity: .9;
 }
 
+ /*cambie la posición de la estrella para simular el contenido siguiente como
+ en el whats real */
+.secondary-content i {
+	margin-right: -20px !important;
+}
+
  /* esta clase pertenece a la de los integrantes del chat */
 .subtitulo {
 	font-size: 12px;
@@ -80,9 +86,14 @@
 	border-radius: 9px;
 	width: 100%;
 }
-
+ /* tuve que cambiar el color de los iconos */
 i {
 	color: gray;
+}
+
+ /* cambie el ancho de la ventana del drop, poruqe el texto no se veia completo*/
+.dropdown-content {
+	width: 150px !important;
 }
 
 
