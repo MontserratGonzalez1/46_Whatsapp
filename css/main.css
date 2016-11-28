@@ -41,22 +41,20 @@
 .panel-gris {
 	height: 60px;
 	width: 100%;
-	margin: 0px;
+	padding: 8px 4px;
 }
 
+/* esta es la barra gris donde se podrá escribir, parte baja del chat*/
+#panel-bajo {
+	margin-top: 423px;
+}
 
 	/*este es el tamaño de la foto del perfil del ususario*/
 
 .img-perfiles {
 	width: 45px;
 	height: 45px;
-	margin-top: -13px;
 }
-
- 	/* este es el contendeor de los chats, auqne ya viene predeterminado, 
- 	pero le cambie el ancho porque viene más grande */
-
-
 
 	/*este será el marcador para entrar al contenido del chat elegido*/
 .star {
@@ -67,8 +65,25 @@
 	opacity: .9;
 }
 
+ /* esta clase pertenece a la de los integrantes del chat */
+.subtitulo {
+	font-size: 12px;
+	margin-top: -1px;
+}
+ /* este margen es de los iconos de la ventana chat */
+.margen-icon-chat {
+	margin-top: 10px;
+}
 
+.input {
+	height: 40px;
+	border-radius: 9px;
+	width: 100%;
+}
 
+i {
+	color: gray;
+}
 
 
 @media screen and (max-height: 500px)
