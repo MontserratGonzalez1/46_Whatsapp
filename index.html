@@ -14,17 +14,42 @@
 	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body >
-	<header id="back-verde" class="fixed">
+	<header id="back-verde" class="fixed"> <!--esto es fondo-->
 	</header>
-		<section id="back-gris" class="fixed">
+		<section id="back-gris" class="fixed"> <!--esto es fondo-->
 		</section>
 			<div class="row">
-				<section id="contenedor" >	<!-- este es el contenedor principal del menu y conversación -->
-					<div class="col s4">
-						<ul id="nav-mobile" class="side-nav fixed menu container">
-				    		<div class="row">
-					    		<div class="card-panel #e0e0e0 grey lighten-2 panel-gris"> <!-- panel gris donde va la foto del perfil-->
-					      			<img src="image/gian.jpg" class="circle img-perfiles responsive-img">
+					<div class="col s4"> <!-- esta es la columna de los contactos-->
+						<ul id="nav-mobile" class="side-nav fixed menu">
+				    		<div class="row"> <!-- este es renglon de la barra gris (menú)-->
+				    			<div class="col s12">
+						    		<div class="card-panel #e0e0e0 grey lighten-2 panel-gris"> <!-- panel gris donde va la foto del perfil-->
+						    			<div class="row">
+							    			<div class="col s6"> <!--esta es la columan de la foto d perfil -->
+							      				<a href="x">
+							      					<img src="image/gian.jpg" class="circle img-perfiles responsive-img">
+							      				</a>
+							      			</div>
+							      			<div class="col s3"> <!-- esta columna llevaría a la foto de perfil del usuario principal-->
+							      				 <a href="x">
+							      				 	<i class="material-icons">comment</i> <!-- icono de mensaje-->
+							      				 </a>
+							      			</div>
+							      			<div class="col s3"> <!-- esta col es la lista desplegable de las opciones del chat-->
+								      			<a class="dropdown-button" href="x" data-activates="dropdown2">
+								      				<i class="material-icons">more_vert</i> <!--icono de los 3 puntos-->
+								      			</a>
+								      			<ul id="dropdown2" class="dropdown-content"> <!--lista de opciones-->
+													    <li><a href="#!">Nuevo grupo</a></li>
+													    <li><a href="#!">Perfil</a></li>
+													    <li><a href="#!">Archivado</a></li>
+													    <li><a href="#!">Destacado</a></li>
+													    <li><a href="#!">Configuración</a></li>
+													    <li><a href="#!">Cerrar Sesión</a></li>
+												</ul>
+							      			</div>
+						      			</div>
+					        		</div>
 					        	</div>
 							</div>
 					      	<div class="row">	<!--(BARRA DE BUSQUEDA)-->
@@ -41,85 +66,74 @@
 								</div>
 							</div>		
 										<!-- AQUI EMPIEZA LA LISTA DE CONTACTOS-->						
-				    			
-							<ul class="collection">
-				    			<li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							    <li class="collection-item avatar">  
-							    	<img src="image/logocodeacademy.png" class="circle responsive-img">
-							    	<span class="title">Laboratoria Perú</span>
-							    	<p> ¡ Hola !</p>
-							    	<a href="#!" class="secondary-content"> <i class="material-icons">grade</i> </a>
-							    </li>
-							 </ul>
-						</ul> 
-							  	<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+				    		<div class="row">
+				    			<div class="col s12">
+									<ul class="collection">
+						    			<li class="collection-item avatar">  
+									    	<img src="image/logocodeacademy.png" class="circle responsive-img">
+									    	<span class="title">Laboratoria Perú</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> <i class="material-icons star">grade</i> 14:25 </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/raymi.jpg" class="circle responsive-img">
+									    	<span class="title">Raymi Saldomando</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> 11:52 <i class="material-icons star">grade</i> </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/mariana.jpg" class="circle responsive-img">
+									    	<span class="title">Mariana Costa</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> 09:25<i class="material-icons star">grade</i> </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/anamaria.jpg" class="circle responsive-img">
+									    	<span class="title">Ana Maía Martínez Franklin</span>
+									    	<p> ¡ Hola !</p>
+
+									    	<a href="#!" class="secondary-content">Ayer <i class="material-icons star">grade</i> </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/rodulfo.jpg" class="circle responsive-img">
+									    	<span class="title">Rodulfo Prieto</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> Martes<i class="material-icons star">grade</i> </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/andrea.jpg" class="circle responsive-img">
+									    	<span class="title">Andrea Lamas</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> Lunes<i class="material-icons star">grade</i> </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/mariapaula.jpg" class="circle responsive-img">
+									    	<span class="title">María Paula Rivaola</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> 13/01/2016<i class="material-icons star">grade</i> </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/katy.jpg" class="circle responsive-img">
+									    	<span class="title">Katy Sanchez</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> 11/01/2016<i class="material-icons star">grade</i> </a>
+									    </li>
+									    <li class="collection-item avatar">  
+									    	<img src="image/aldo.jpg" class="circle responsive-img">
+									    	<span class="title">Aldo Alfaro</span>
+									    	<p> ¡ Hola !</p>
+									    	<a href="#!" class="secondary-content"> 03/01/2016<i class="material-icons star">grade</i> </a>
+									    </li>
+									 </ul>
+								 </div>	
+							</div>
+						</ul> 		  	
+					</div>	<!-- esta es la col del menu y chats-->
+					<div class="col s8" id="contenedor"> <!-- esta es la col del chat grandote-->
+						
 					</div>
-			</section>		
-		</div>  <!-- aquí se termina el row del contenedor grandonte -->
-				 
-
-				<section>
-					<div class="col s8">
-			
-					</div>
-				</section>
-			
-		
-	
-		
-			
-
-			<!-- aqui empezará contenido -->
-	
-
-
+			</div>  <!-- aquí se termina el row del contenedor grandonte -->
+				
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/js.js"></script>

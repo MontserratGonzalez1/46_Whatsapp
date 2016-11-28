@@ -4,7 +4,7 @@
     background-color: #00796b;
     width: 100%,
 }
-
+ /* este es el back color gris del fondo */
 #back-gris {
 	margin: 0;
 	height: 522px;
@@ -13,16 +13,20 @@
     z-index: auto;
 }
 
+	 /* este es el back del whats */
+
 #contenedor {
-	width: 90%;
+	width: 60%;
 	height: 550px;
 	background-image: url("../image/chat-panel-bg.png");
 	background-color: #e0e0e0;
 	margin-top: -600px;
-	margin-left: 60px;
+	margin-left: 460px;
 	border: solid gray;
 	position: static;
 }
+
+ 	/* esta es la medida del nav o menu donde se encuentran los chats */
 
 .menu {
 	margin-left: 60px;
@@ -30,16 +34,40 @@
 	margin-top: 71px;
 	width: 30%;
 }
+	 /* este es el back donde se encuentra la foto de perfil principal y servirá 
+	 también para la´parte del chat
+	 */
 
 .panel-gris {
 	height: 60px;
-	margin: 0;
+	width: 100%;
+	margin: 0px;
 }
+
+
+	/*este es el tamaño de la foto del perfil del ususario*/
 
 .img-perfiles {
 	width: 45px;
 	height: 45px;
+	margin-top: -13px;
 }
+
+ 	/* este es el contendeor de los chats, auqne ya viene predeterminado, 
+ 	pero le cambie el ancho porque viene más grande */
+
+
+
+	/*este será el marcador para entrar al contenido del chat elegido*/
+.star {
+	opacity: .0;
+}
+
+.star:hover {
+	opacity: .9;
+}
+
+
 
 
 
