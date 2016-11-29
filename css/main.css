@@ -11,6 +11,14 @@
 	padding:40px 40px;
 }
 
+.header {
+	background-color: transparent;
+	color: #fff;
+	margin-top: 20px;
+	margin-left: 30px;
+
+}
+
 /* este es el circulo verde, donde estan los iconos de los cellares*/
 .cels {
 	background-color: #43d854;
