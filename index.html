@@ -1,208 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	  	<meta charset="utf-8">
-	  	<title>Whatsapp Web</title>
-	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	  	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
-	  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+<head>
+	<meta charset="UTF-8">
+	<title>Whatsapp</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
 	  	<!-- Vincula los CSS que faltan -->
 	  	<link rel="stylesheet" type="text/css" href="css/materialize.css">
-	  	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-	  	<link rel="stylesheet" type="text/css" href="css/main.css">
-	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	</head>
-	<body >
-		<header id="back-verde" class="fixed"> <!--esto es fondo-->
-		</header>
-		<section id="back-gris" class="fixed"> <!--esto es fondo-->
-		</section>			
-		<div class="col s4 "> <!-- esta es la columna de los contactos-->
-			<ul id="nav-mobile" class="side-nav fixed menu"> <!-- si quitó esta ul se mueve todo x separado hacia abajo como otro row :( -->
-				<div class="row"> <!-- este es renglon de la barra gris (menú)-->
-				    <div class="col s12">
-						<div class="#e0e0e0 grey lighten-2 panel-gris z-depth-2"> <!-- panel gris donde va la foto del perfil-->
-						   	<div class="row">
-							    <div class="col s6"> <!--esta es la columan de la foto d perfil -->
-							      	<a href="x">
-							      		<img src="image/gian.jpg" class="circle img-perfiles responsive-img">
-							      	</a>    
-							    </div>
-							    <div class="col s3"> <!-- esta columna llevaría a la foto de perfil del usuario principal-->
-							      	<a href="x">
-							      		<i class="material-icons">comment</i> <!-- icono de mensaje-->
-							      	</a>
-							    </div>
-							    <div class="col s3"> <!-- esta col es la lista desplegable de las opciones del chat-->
-								    <a class="dropdown-button" href="x" data-activates="dropdown2">
-								     	<i class="material-icons">more_vert</i> <!--icono de los 3 puntos-->
-								    </a>
-								    <ul id="dropdown2" class="dropdown-content"> <!--lista de opciones-->
-										<li><a href="#!">Nuevo grupo</a></li>
-										<li><a href="#!">Perfil</a></li>
-										<li><a href="#!">Archivado</a></li>
-										<li><a href="#!">Destacado</a></li>
-										<li><a href="#!">Configuración</a></li>
-										<li><a href="#!">Cerrar Sesión</a></li>
-									</ul>
-							    </div>
-						    </div>
-					    </div>
-					</div>
-				</div>
-				<div class="row">	<!--(BARRA DE BUSQUEDA)-->
-					<div class="search-wrapper card">
-						<form>
-							<div class="input-field">
-								<input id="search" type="search">
-								    <label for="search">
-								   	<i class="material-icons tiny">search</i> Buscar o empezar un chat nuevo
-								   	</label>
-								    <i class="material-icons tiny">close</i>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="body">
+	<div class="white cuadro-blanco">
+		<div class="row">
+			<div class="col s6 ">
+				<ul class="caption-style-4">
+					<li>	
+						<img src='https://chart.googleapis.com/chart?cht=qr&chl=SMSTO%3A5561699484%3Ahi&chs=180x180&choe=UTF-8&chld=L|2' height="250" width="250">
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<a rel='nofollow' href='chat.html' border='0' style='cursor:default'> 	  <h5>DA CLICK</h5>
+									<p>para entrar</p>
+								</a>
 							</div>
-						</form>
-					</div>
-				</div>		
-						<!-- AQUI EMPIEZA LA LISTA DE CONTACTOS-->						
+						</div>	
+					</li>
+				</ul>
+			</div>
+			<div class="col s6">
+				<h3>Whatsapp</h3>
+				<p>Ingresa dando click en la imagen del código</p>
+				<input type="checkbox" class="click-to-toggle" value="On" name="rememberMe">
+				<label>Mantener sesión iniciada</label>
+				<br>
+				<p>Para reducir el consumo de datos móviles, conecta tu <br>
+				teléfono a una red Wi-Fi.</p>
+			</div>
+		</div>
+		<div class="row"> <!-- AQUÍ VAN TODOS LOS ICONOS-->
+			<div class="col s6">
 				<div class="row">
-				    <div class="col s12">
-						<ul class="collection">
-						    <li class="collection-item avatar">  
-								<img src="image/logocodeacademy.png" class="circle responsive-img">
-								<span class="title">Laboratoria Perú</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> 14:25 <i class="material-icons star right">keyboard_arrow_down</i></a>
-								
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/raymi.jpg" class="circle responsive-img">
-								<span class="title">Raymi Saldomando</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> 11:52 <i class="material-icons star right">keyboard_arrow_down</i> </a>
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/mariana.jpg" class="circle responsive-img">
-								<span class="title">Mariana Costa</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> 09:25 <i class="material-icons star right">keyboard_arrow_down</i> </a>
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/anamaria.jpg" class="circle responsive-img">
-								<span class="title">Ana Maía Martínez Franklin</span>
-								<p> ¡ Hola !</p>
-
-								<a href="#!" class="secondary-content">Ayer <i class="material-icons star right">keyboard_arrow_down</i></a>
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/rodulfo.jpg" class="circle responsive-img">
-								<span class="title">Rodulfo Prieto</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> Martes<i class="material-icons star right">keyboard_arrow_down</i></a>
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/andrea.jpg" class="circle responsive-img">
-								<span class="title">Andrea Lamas</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> Lunes <i class="material-icons star right">keyboard_arrow_down</i></a>
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/mariapaula.jpg" class="circle responsive-img">
-								<span class="title">María Paula Rivaola</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> 13/01/2016 <i class="material-icons star right">keyboard_arrow_down</i></a>
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/katy.jpg" class="circle responsive-img">
-								<span class="title">Katy Sanchez</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> 11/01/2016 <i class="material-icons star right">keyboard_arrow_down</i></a>
-							</li>
-							<li class="collection-item avatar">  
-								<img src="image/aldo.jpg" class="circle responsive-img">
-								<span class="title">Aldo Alfaro</span>
-								<p> ¡ Hola !</p>
-								<a href="#!" class="secondary-content"> 03/01/2016 <i class="material-icons star right">keyboard_arrow_down</i></a>
-							</li>
-						</ul>
+					<div class="col s2"> <!--ANDROID-->
+						<i class="material-icons cels">android</i>
+					</div>
+					<div class="col s10">
+						<p> <b>Android </b></p>
+						<p class="texto" >Abre Whatsapp -- Menú -- WhatsApp Web</p>
 					</div>	
-				</div>
-			</ul> 		  	
-		</div>	<!-- esta es la col del menu y chats-->
-		<div class="col s8 m6 l12" id="contenedor"> <!-- esta es la col del chat grandote , si le quito el container desaparece :O :O -->
-			<div class="row"> <!-- este es renglon de la barra gris (menú)-->
-				<div class="col s12 fixed">
-					<div class=" grey lighten-2 panel-gris z-depth-2">
-						<div class="row">
-							<div class="col s1"> <!--esta es la columna de la foto d perfil -->
-								<a href="x">
-								 	<img src="image/logocodeacademy.png" class="circle img-perfiles avatar">
-								</a>
-							</div>
-							<div class="col s8">
-								<span class="title">Laboratoria Perú</span>
-								<p class="subtitulo">Ana María, Aldo, Gian, Mariana, Tú</p>
-							</div>
-							<div class="col s1">
-								<a href="x" >
-								 	<i class="material-icons margen-icon-chat">search</i> <!--icono de búsqueda-->
-								</a>
-							</div>
-							<div class="col s1"> 
-								<div class="fixed-action-btn">
-    								<a class="btn-floating btn-large ">
-      								<i class="large material-icons">attach_file</i>
-    								</a>
-    								<ul>
-      									<li><a class="btn-floating red mover"><i class="material-icons">photo</i></a></li>
-      									<li><a class="btn-floating yellow darken-1 mover"><i class="material-icons">photo_camera</i></a></li>
-      									<li><a class="btn-floating green mover"><i class="material-icons">insert_drive_file</i></a></li>
-      									<li><a class="btn-floating blue mover"><i class="material-icons">account_circle</i></a></li>
-    								</ul>
-  								</div>     			
-							</div>
-								<div class="col s1"> 	<!-- este es la lista de configuración del chat -->
-								   	<a class="dropdown-button" href="x" data-activates="dropdown">
-								    	<i class="material-icons margen-icon-chat">more_vert</i> <!--icono de los 3 puntos-->
-								   	</a>
-								    <ul id="dropdown" class="dropdown-content "> <!--lista de opciones-->
-										<li><a href="#!">Info. del contacto</a></li>
-										<li><a href="#!">Seleccionar mensajes</a></li>
-										<li><a href="#!">Silenciar</a></li>
-										<li><a href="#!">Eliminar mensajes</a></li>
-										<li><a href="#!">Eliminar chat</a></li>
-									</ul>
-								</div>
-						</div>
+					<div class="col s2"> <!-- WINDOWS -->
+						<i class="material-icons cels">view_quilt</i>
+					</div>
+					<div class="col s10">
+						<p> <b>Windows Phone </b> </p>
+						<p class="texto">Abre Whatsapp -- Menú -- WhatsApp Web</p>
+					</div>
+					<div class="col s2"> <!--blackberry-->
+						<i class="material-icons cels">bubble_chart</i>
+					</div>
+					<div class="col s10">
+						<p> <b>Blackberry 10 </b> </p>
+						<p class="texto">Abre Whatsapp -- Desliza el borde <br>
+						superior de la pantalla -- WhatsApp Web</p>
 					</div>			
 				</div>
-				<div class="row fixed"> <!-- este es renglon de la barra gris (menú)-->
-				 	<div class="col s12">
-						<div class="grey lighten-2 panel-gris z-depth-2 top" id="panel-bajo"> <!--esta es la barra gris -->
-						    <div class="row">
-						    	<div class="col s1">
-						    		<a href="x" >
-								     	<i class="material-icons margen-icon-chat">mood</i> <!--icono de la carita-->
-								    </a>
-						    	</div>
-						    	<div class="col s10"> 
-						    		<input tabindex="-1" type="input" class="input"  placeholder=" Escribe tu mensaje aquí" onclick="Materialize.toast('I am a toast!', 3000, 'rounded')">						
-						    	</div>
-						    	<div class="col s1">
-						    		<a href="x" >
-								    <i class="material-icons margen-icon-chat">mic</i> <!--icono de micrófono-->
-								    </a>
-						    	</div>
-						    </div>
-						</div>
-					</div>
-				</div> <!--hasta aquí termina la parte baja del chat -->
 			</div>
-		</div> <!-- hasta aqui termina la columna 8 del chat-->
-			
-				
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script type="text/javascript" src="js/js.js"></script>
-	</body>
+			<div class="col s6">
+				<div class="row">
+					<div class="col s2"> <!--IPHONE-->
+						<i class="material-icons cels">phone_iphone</i>
+					</div>
+					<div class="col s10">
+						<p> <b> iPhone </b></p>
+						<p class="texto">Abre Whatsapp -- Ajustes -- WhatsApp Web</p>
+					</div>	
+					<div class="col s2"> <!-- BLACKBERRY -->
+						<i class="material-icons cels">bubble_chart</i>
+					</div>
+					<div class="col s10">
+						<p> <b> BlackBerry </b></p>
+						<p class="texto">Abre Whatsapp -- Menú -- WhatsApp Web</p>
+					</div>
+					<div class="col s2"> <!--NOKIA-->
+						<i class="material-icons cels">toys</i>
+					</div>
+					<div class="col s10">
+						<p> <b> Nokia S60 </b></p>
+						<p class="texto">Abre Whatsapp -- Menú -- WhatsApp Web</p>
+					</div>		
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
 </html>
