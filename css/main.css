@@ -28,14 +28,80 @@ telefónos */
 	margin-top: -15px;
 }
 
-.fade:hover
-{
-    opacity:0.6;
-    border-radius: 100%;
-    visibility: text;
+ /* este es el codigo del efecto HOVER del QR */
+.caption-style-4{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	.caption-style-4 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+	.caption-style-4 li:hover .caption{
+		opacity: 1;
+	}
+	.caption-style-4 li:hover img{
+		opacity: 1;
+		transform: scale(1.15,1.15);
+		-webkit-transform:scale(1.15,1.15);
+		-moz-transform:scale(1.15,1.15);
+		-ms-transform:scale(1.15,1.15);
+		-o-transform:scale(1.15,1.15);
+	}
+	.caption-style-4 img{
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+	.caption-style-4 .caption{
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
+	}
+	.caption-style-4 img{
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+	}
+	.caption-style-4 .blur{
+		background-color: rgba(0,0,0,0.65);
+		height: 300px;
+		width: 400px;
+		z-index: 5;
+		position: absolute;
+	}
+	.caption-style-4 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+	.caption-style-4 .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 400px;
+		height: 300px;
+		text-align: center;
+		top:100px;
+	}
+		/*HASTA AQUI TERMINA EL EFECTO DEL HOVER*/
+
+a {
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
 }
-
-
 
 /* cÓDIGO DE INDEX. CHAT */
 
@@ -132,9 +198,25 @@ i {
 	color: gray;
 }
 
+
+.btn-floating {
+	position: relative !important;
+	margin-top: -1070px !important;
+	margin-right: 160px !important;
+  	
+}
+
+.mover {
+	position: absolute;
+	right: 60px;
+	top: 240px;
+	left: 5px;
+}
+
  /* cambie el ancho de la ventana del drop, poruqe el texto no se veia completo*/
 .dropdown-content {
 	width: 150px !important;
+	z-index: 20;
 }
 
 

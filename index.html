@@ -149,39 +149,23 @@
 								</a>
 							</div>
 							<div class="col s1"> 
-								<a class="click-to-toggle ">
-									<i class="material-icons margen-icon-chat">attach_file</i> <!--icono de clip-->
-								</a>
-										<!-- la lista se queda fija y no se oculta :( -->
-												
-						<!--		<ul >
-									<li>
-										<a class="btn-floating red">
-											<i class="material-icons">insert_chart</i>
-										</a>
-									</li>
-									<li>
-										<a class="btn-floating yellow darken-1">
-											<i class="material-icons">format_quote</i>
-										</a>
-									</li>
-									<li>
-										<a class="btn-floating green">
-											<i class="material-icons">publish</i>
-										</a>
-									</li>
-									<li>
-										<a class="btn-floating blue">
-											<i class="material-icons">attach_file</i>
-										</a> 
-									</li>
-								</ul>	-->      			
+								<div class="fixed-action-btn">
+    								<a class="btn-floating btn-large ">
+      								<i class="large material-icons">attach_file</i>
+    								</a>
+    								<ul>
+      									<li><a class="btn-floating red mover"><i class="material-icons">photo</i></a></li>
+      									<li><a class="btn-floating yellow darken-1 mover"><i class="material-icons">photo_camera</i></a></li>
+      									<li><a class="btn-floating green mover"><i class="material-icons">insert_drive_file</i></a></li>
+      									<li><a class="btn-floating blue mover"><i class="material-icons">account_circle</i></a></li>
+    								</ul>
+  								</div>     			
 							</div>
 								<div class="col s1"> 	<!-- este es la lista de configuración del chat -->
-								   	<a class="dropdown-button" href="x" data-activates="dropdown2">
+								   	<a class="dropdown-button" href="x" data-activates="dropdown">
 								    	<i class="material-icons margen-icon-chat">more_vert</i> <!--icono de los 3 puntos-->
 								   	</a>
-								    <ul id="dropdown2" class="dropdown-content"> <!--lista de opciones-->
+								    <ul id="dropdown" class="dropdown-content "> <!--lista de opciones-->
 										<li><a href="#!">Info. del contacto</a></li>
 										<li><a href="#!">Seleccionar mensajes</a></li>
 										<li><a href="#!">Silenciar</a></li>
@@ -202,7 +186,7 @@
 								    </a>
 						    	</div>
 						    	<div class="col s10"> 
-						    		<input tabindex="-1" type="input" class="input"  placeholder=" Escribe tu mensaje aquí">						
+						    		<input tabindex="-1" type="input" class="input"  placeholder=" Escribe tu mensaje aquí" onclick="Materialize.toast('I am a toast!', 3000, 'rounded')">						
 						    	</div>
 						    	<div class="col s1">
 						    		<a href="x" >
