@@ -1,7 +1,48 @@
+/* ESTE ES EL BODY DE LA PAGINA DE INICIO */
+.body {
+	background-color: #009688;
+}
+ /* ESTE ES EL FONDO . CUADRO BLANCO */
+.cuadro-blanco {
+	height: 600px;
+	width: 70%;
+	margin-top: 40px;
+	margin-left: 200px;
+	padding:40px 40px;
+}
+
+/* este es el circulo verde, donde estan los iconos de los cellares*/
+.cels {
+	background-color: #43d854;
+	border-radius: 100px;
+	color: #fff;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	padding: 20px;
+}
+
+/* este es el top que de las frases que están debajo de las marcas de los
+telefónos */
+.texto {
+	margin-top: -15px;
+}
+
+.fade:hover
+{
+    opacity:0.6;
+    border-radius: 100%;
+    visibility: text;
+}
+
+
+
+/* cÓDIGO DE INDEX. CHAT */
+
 #back-verde {
 	margin: 0;
 	height: 150px;
-    background-color: #00796b;
+    background-color: #009688;
     width: 100%,
 }
  /* este es el back color gris del fondo */
